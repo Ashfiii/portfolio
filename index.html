@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+  <style>
+    .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  margin-bottom: 34px;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white;
+}
+
+.tab button:hover {
+  background-color: black;
+  opacity: 0.4;
+}
+
+.tab button.active {
+  background-color: black;
+}
+  </style>
+</head>
+
+<body>
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>A</span>shfaque <span>A</span>lam</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Ashfaque <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/img-3.jpg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>Front End Developer</h2>
+        <p>I'm a Front End Developer specialized in building websites and web apps with a big interest in pure CSS
+          illustrations and beautiful animations. Familiarity with all the frontend technologies like HTML, CSS, JavaScript and its libraires like React.
+          When dealing with a project I pay attention to the smallest details addressing problems with patience.</p>
+        <a href="./ashfaque_resume.docx" download="Resume" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="skill-bottom">
+      <div class="skill-item">
+        <div class="icon"><img src="img/html.png" /></div>
+        <h2>HTML</h2>
+        <p>Developed responsive websites and web applications using plain HTML without relying on a framework.</p>
+      </div>
+      <div class="skill-item">
+        <div class="icon"><img src="img/css.png" /></div>
+        <h2>CSS</h2>
+        <p>I enjoy CSS and use it to beautify my projects and play with it creating CSS illustrations.</p>
+      </div>
+      <div class="skill-item">
+        <div class="icon"><img src="img/js.png" /></div>
+        <h2>JavaScript</h2>
+        <p>I've a solid knowledge of JS including ES6 and improve it daily by using it to refactor some old projects and
+          building new ones.</p>
+      </div>
+    </div>
+    <div class="skill-bottom">
+      <div class="skill-item">
+        <div class="icon"><img src="img/react.png" /></div>
+        <h2>React</h2>
+        <p>Learned fundamentals of this library and used it together with Redux and Styled Components in some of my personal projects.</p>
+      </div>
+      <div class="skill-item">
+        <div class="icon"><img src="img/git.png" /></div>
+        <h2>Git</h2>
+        <p>All my latest projects are supported by Git. I use it to publish, maintain my work and for teaming up with
+          other devs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title"><span>Projects</span></h1>
+      </div>
+      <div class="tab">
+        <button class="tablinks" onclick="changeTab(event, 'tab1')">Web Suite</button>
+        <button class="tablinks" onclick="changeTab(event, 'tab2')">React</button>
+      </div>
+      <div id="tab1" class="tabcontent">
+        <div class="project-item">
+          <div class="project-info">
+            <a href="https://js-projects-home-decor.netlify.app" target="_blank">
+              <h1>Shopping Cart</h1>
+              <p>In this project I have build a shopping cart using vanilla js. All the functionalities of shopping cart
+                are included in this project.</p>
+            </a>
+          </div>
+          <div class="project-img">
+            <img src="./img/home-decor.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <a href="https://js-projects-responsive-site.netlify.app" target="_blank">
+              <h1>Responsive Website</h1>
+              <p>A website developed on HTML 5, CSS and JavaScript with responsive web design.</p>
+            </a>
+          </div>
+          <div class="project-img">
+            <img src="./img/responsive-website.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <a href="https://js-projects-mars-weather-app.netlify.app" target="_blank">
+              <h1>Mars Weather </h1>
+              <p>The project shows the atmospheric pressure in Mars. The data is fetched through an api provided by NASA.</p>
+            </a>
+          </div>
+          <div class="project-img">
+            <img src="./img/mars.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <a href="https://ashfiii.github.io/gmail-clone/" target="_blank">
+              <h1>Gmail Clone</h1>
+              <p>This is just a clone of gmail. In this project I have used HTML5, CSS and a little knowledge of
+                JavaScript.</p>
+            </a>
+          </div>
+          <div class="project-img">
+            <img src="./img/gmail.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+      <div id="tab2" class="tabcontent">
+        <div class="project-item">
+          <div class="project-info">
+            <a href="https://react-covid-tracking.netlify.app" target="_blank">
+              <h1>Covid Tracker</h1>
+              <p>This tracker aims to show the numbers & trends of people affected, recovered and deceased due to COVID-19.</p>
+            </a>
+          </div>
+          <div class="project-img">
+            <img src="./img/covid-tracker.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <a href="https://react-covid-tracking.netlify.app" target="_blank">
+              <h1>Recipee App</h1>
+              <p>The project shows the various recipees that is fetched from an external api.</p>
+            </a>
+          </div>
+          <div class="project-img">
+            <img src="./img/covid-tracker.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2><a href="tel:+918839377034">+91-8839377034</a></h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2><a href="mailto:alam19231@gmail.com">alam19231@gmail.com</a></h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Ranchi, Jharkhand</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>A</span>shfaque <span>A</span>lam</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/ashfaque.alam.5621/"><img
+              src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/the_lastbencher_boy/"><img
+              src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/Ashfiii"><img src="https://img.icons8.com/bubbles/100/000000/github.png" /></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/ashfaque-alam-801980188/"><img
+              src="https://img.icons8.com/bubbles/100/000000/linkedin.png" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
