@@ -332,11 +332,10 @@ p {
 	color: white;
 }  
 .tab button:hover {
-	background-color: black;
-	opacity: 0.4;
+	background-color: rgba(41, 50, 60, 0.4);	
 }
 .tab button.active {
-	background-color: black;
+	background-color: #29323c;
 }
 #projects .projects {
 	flex-direction: column;
@@ -622,6 +621,9 @@ p {
 	}
 	#about .col-right h1 {
 		text-align: left;
+	}
+	#projects{
+		margin: 0 20px;
 	}
 	#contact .contact {
 		flex-direction: column;
